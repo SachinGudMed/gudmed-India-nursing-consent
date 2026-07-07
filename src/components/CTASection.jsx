@@ -45,7 +45,7 @@ export default function CTASection() {
             <input
               type="email"
               placeholder="Enter your email"
-              className="flex-1 bg-[#2E4168] border border-[#2E4168] rounded-xl px-4 py-3 text-sm text-white placeholder-white focus:outline-none focus:border-[#4f46e5] transition-colors"
+              className="flex-1 border border-[#2E4168] rounded-xl px-4 py-3 text-sm text-black placeholder-black focus:outline-none focus:border-[#4f46e5] transition-colors"
             />
             <button
               type="button"

@@ -18,6 +18,11 @@ const statusColor = {
 const features = [
   {
     icon: Zap,
+    title: 'Voice-to-Text for Nurses',
+    desc: 'AI generates comprehensive shift handover summaries from voice entries and structured data. No more blank-staring at free-text fields.',
+  },
+  {
+    icon: Zap,
     title: 'Automated Shift Notes',
     desc: 'AI generates comprehensive shift handover summaries from voice entries and structured data. No more blank-staring at free-text fields.',
   },
@@ -36,11 +41,11 @@ const features = [
     title: 'Structured Shift Handover',
     desc: 'Nursing staff can handover in either language. Structured SBAR format handover — in under 2 minutes per patient.',
   },
-  {
-    icon: Globe,
-    title: 'Arabic & English Interface',
-    desc: 'Patient-facing documentation auto-translated. Multilingual support for UAE\'s diverse nursing workforce.',
-  },
+  // {
+  //   icon: Globe,
+  //   title: 'Hindi & English Interface',
+  //   desc: 'Patient-facing documentation auto-translated. Multilingual support for India\'s diverse nursing workforce.',
+  // },
 ]
 
 export default function NursingNotes() {
@@ -48,14 +53,14 @@ export default function NursingNotes() {
     <section id="nursing-notes" className="bg-white py-20">
       <div className="max-w-7xl mx-auto px-6">
         {/* Label */}
-        <div className="text-xs font-bold text-[#22c55e] tracking-widest uppercase mb-3">
+        <div className="text-xs font-bold text-[#2E4168] tracking-widest uppercase mb-3">
           AI Nursing Notes
         </div>
 
         <div className="flex flex-col lg:flex-row gap-16 items-start">
           {/* Left — chart + note */}
           <div className="w-full lg:w-[45%] shrink-0">
-            <h2 className="text-3xl md:text-4xl font-black text-gray-900 leading-tight mb-4">
+            <h2 className="text-3xl md:text-4xl font-black text-[#2E4168] leading-tight mb-4">
               Your Nurses Document Less. Care More.
             </h2>
             <p className="text-gray-500 text-sm leading-relaxed mb-8">
@@ -64,12 +69,12 @@ export default function NursingNotes() {
 
             {/* Nursing Chart Card */}
             <div className="rounded-2xl border border-gray-200 shadow-sm overflow-hidden mb-4">
-              <div className="bg-[#142e1e] px-4 py-3 flex items-center justify-between">
+              <div className="bg-[#2E4168] px-4 py-3 flex items-center justify-between">
                 <div>
                   <div className="text-white text-xs font-bold">GudMed Nurse Chart — ICU Bed 4</div>
                 </div>
                 <div className="flex gap-2">
-                  <span className="bg-[#22c55e] text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full">
+                  <span className="bg-[#4f46e5] text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full">
                     Completed
                   </span>
                   <span className="bg-white/20 text-white/60 text-[10px] font-medium px-2.5 py-0.5 rounded-full">
@@ -104,7 +109,7 @@ export default function NursingNotes() {
             {/* AI Shift Note */}
             <div className="rounded-2xl border border-gray-200 bg-gray-50 p-4">
               <div className="flex items-center gap-2 mb-3">
-                <Brain size={13} className="text-[#22c55e]" />
+                <Brain size={13} className="text-[#4f46e5]" />
                 <span className="text-[10px] font-bold text-gray-500 tracking-widest uppercase">
                   AI Shift Note &nbsp;·&nbsp; Night Shift 20:00–08:00
                 </span>
@@ -119,8 +124,8 @@ export default function NursingNotes() {
           <div className="flex-1 flex flex-col gap-6 pt-2">
             {features.map(({ icon: Icon, title, desc }) => (
               <div key={title} className="flex gap-4">
-                <div className="shrink-0 w-9 h-9 rounded-xl bg-emerald-50 flex items-center justify-center mt-0.5">
-                  <Icon size={17} className="text-[#22c55e]" />
+                <div className="shrink-0 w-9 h-9 rounded-xl bg-[#2E4168] flex items-center justify-center mt-0.5">
+                  <Icon size={17} className="text-white" />
                 </div>
                 <div>
                   <h4 className="text-gray-900 font-bold text-sm mb-1">{title}</h4>

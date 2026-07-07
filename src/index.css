@@ -1,16 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
 @import "tailwindcss";
 
 @theme {
   --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-heading: 'Poppins', sans-serif;
 
-  --color-g-950: #060e0a;
-  --color-g-900: #0d1f15;
-  --color-g-800: #142e1e;
-  --color-g-700: #1d4029;
-  --color-g-600: #285a3a;
-  --color-g-500: #357a50;
-  --color-g-accent: #4ade80;
-  --color-g-bright: #22c55e;
+  --color-g-950: #1a2847;
+  --color-g-900: #222f4a;
+  --color-g-800: #2E4168;
+  --color-g-700: #3a4d7a;
+  --color-g-600: #465a8c;
+  --color-g-500: #52679e;
+  --color-g-accent: #6366f1;
+  --color-g-bright: #4f46e5;
   --color-gold: #f59e0b;
 }
 
@@ -25,4 +27,14 @@ html {
 body {
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
   -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+}
+
+@layer utilities {
+  .font-poppins {
+    font-family: 'Poppins', sans-serif;
+  }
 }

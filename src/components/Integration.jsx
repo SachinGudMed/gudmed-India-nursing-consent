@@ -1,20 +1,21 @@
 import { ArrowRight, Check } from 'lucide-react'
 
 const bullets = [
-  { bold: 'Cerner, Epic, Meditech', text: ' — HL7 FHIR API integration, no rip-and-replace' },
-  { bold: 'NABIDH-push', text: ' — nursing records auto submitted to Digital Health without manual integration steps' },
+  { bold: 'API Ready for HIS & LIS', text: '  — Seamlessly integrates with your existing Hospital Information System (HIS) and Laboratory Information System (LIS).' },
+  { bold: 'Ayushman Bharat Push', text: ' — nursing records auto submitted to National Health Authority without manual integration steps' },
   { bold: 'Signed consents', text: ' auto-stored in patient record, immediately accessible' },
-  { bold: 'Live in 14 days', text: ' — implementation team in Dubai, zero downtime' },
-  { bold: 'Arabic-speaking support team', text: ' — training delivered in English and Arabic' },
+  { bold: 'Live in 14 days', text: ' — implementation team in India, zero downtime' },
+  { bold: 'Hindi-speaking support team', text: ' — training delivered in English and Hindi' },
 ]
 
-const flowInputs = ['Vitals & Observations', 'Medication Records', 'Shift Notes (Voice)', 'Consent Signatures']
+
+const flowInputs = ['Vitals & Observations', 'Medication Records', 'Voice-to-Text for Doctors', 'Consent Signatures']
 
 const flowOutputs = [
-  { label: 'HIS Record', sub: 'Cerner, Epic, Meditech' },
+  { label: 'HIS & LIS', sub: 'API Ready Integration' },
   { label: 'Doctor Ward', sub: 'Real-time physician view' },
   { label: 'Shift Report', sub: 'Auto-generated handover' },
-  { label: 'NABIDH', sub: 'National health exchange' },
+  { label: 'Ayushman Bharat', sub: 'National health exchange' },
 ]
 
 export default function Integration() {
@@ -24,7 +25,7 @@ export default function Integration() {
         <div className="flex flex-col lg:flex-row gap-16 items-start">
           {/* Left */}
           <div className="w-full lg:w-[42%] shrink-0">
-            <div className="text-xs font-bold text-[#22c55e] tracking-widest uppercase mb-3">
+            <div className="text-xs font-bold text-[#2E4168] uppercase mb-3">
               Seamless Integration
             </div>
             <h2 className="text-3xl md:text-4xl font-black text-gray-900 leading-tight mb-6">
@@ -37,8 +38,8 @@ export default function Integration() {
             <ul className="flex flex-col gap-4">
               {bullets.map((b, i) => (
                 <li key={i} className="flex gap-3 items-start">
-                  <div className="mt-0.5 w-5 h-5 rounded-full bg-emerald-50 flex items-center justify-center shrink-0">
-                    <Check size={11} className="text-[#22c55e]" strokeWidth={3} />
+                  <div className="mt-0.5 w-5 h-5 rounded-full flex items-center justify-center shrink-0">
+                    <Check size={11} className="text-[#2E4168]" strokeWidth={3} />
                   </div>
                   <p className="text-gray-600 text-sm">
                     <span className="font-semibold text-gray-900">{b.bold}</span>
@@ -79,12 +80,12 @@ export default function Integration() {
               </div>
 
               {/* AI Processing node */}
-              <div className="bg-[#142e1e] rounded-xl p-4 mb-4">
-                <div className="text-[10px] font-bold text-[#4ade80] tracking-widest uppercase mb-2">
+              <div className="bg-[#2E4168] rounded-xl p-4 mb-4">
+                <div className="text-[10px] font-bold text-white tracking-widest uppercase mb-2">
                   GudMed AI Processing
                 </div>
                 <div className="flex flex-wrap gap-1.5">
-                  {['NLP Structuring', 'ICD-10 Coding', 'DOH/JCI Scoring', 'Arabic Translation', 'Audit Tagging'].map((t) => (
+                  {['NLP Structuring', 'ICD-10 Coding', 'NABH Scoring', 'Audit Tagging'].map((t) => (
                     <span key={t} className="bg-white/10 text-white/70 text-[10px] font-medium px-2 py-0.5 rounded-full">
                       {t}
                     </span>

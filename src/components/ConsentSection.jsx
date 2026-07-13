@@ -71,7 +71,7 @@ export default function ConsentSection() {
           Digital Consent Forms
         </div>
 
-        <div className="flex flex-col lg:flex-row gap-16 items-start">
+        <div className="flex flex-col lg:flex-row gap-16 items-stretch">
           {/* Left — consent cards */}
           <div className="w-full lg:w-[48%] shrink-0">
             <h2 className="text-3xl md:text-4xl font-black text-gray-900 leading-tight mb-4">
@@ -108,12 +108,14 @@ export default function ConsentSection() {
           </div>
 
           {/* Right — how it works flow */}
-          <div className="flex-1">
+          {/* <div className="flex-1"> */}
+          <div className="flex-1 flex flex-col h-[800px]">
             <div className="text-xs font-bold text-gray-400 tracking-widest uppercase mb-6">
               How Consent Works With GudMed
             </div>
 
-            <div className="flex flex-col gap-0">
+            {/* <div className="flex flex-col gap-0"> */}
+            <div className="flex flex-col justify-between h-full">
               {steps.map((step, i) => {
                 const Icon = step.icon
                 return (
@@ -124,7 +126,8 @@ export default function ConsentSection() {
                         {step.num}
                       </div>
                       {i < steps.length - 1 && (
-                        <div className="w-0.5 bg-gray-200 flex-1 my-1" style={{ minHeight: '32px' }} />
+                        // <div className="w-0.5 bg-gray-200 flex-1 my-1" style={{ minHeight: '32px' }} />
+                        <div className="w-0.5 bg-gray-200 flex-1 min-h-20 my-2" />
                       )}
                     </div>
                     {/* Content */}

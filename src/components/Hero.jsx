@@ -5,9 +5,9 @@ import nurseai from "../assets/nurse_ai.png"
 
 const stats = [
   { value: '3 hrs', label: 'Documentation Time Saved Daily' },
-  { value: '10+', label: 'Years of Healthcare Experience' },
-  { value: '100%', label: 'Digital & Secure Consent Forms' },
-  { value: 'Zero', label: 'Lost Patient Consent Records' },
+  { value: '5+', label: 'Years of Healthcare Experience' },
+  { value: '50+', label: 'Consent Forms Available' },
+  { value: '60+', label: 'Nursing Assessment & Charts' },
   // { value: 'JCI', label: 'Audit ready at all times' },
 ]
 
@@ -74,7 +74,7 @@ export default function Hero() {
             <img
               src={nurseai}
               alt="Nurse Homepage Portal"
-              className="h-[600px] w-[900px] object-fill"
+              className="h-[600px] w-[900px] object-fill ml-18"
             />
           </div>
         </div>

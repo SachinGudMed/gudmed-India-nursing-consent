@@ -6,7 +6,7 @@ const bullets = [
     text: ' — Securely integrate GudMed with your Hospital Information System (HIS), Electronic Medical Records (EMR), Laboratory Information System (LIS), and Radiology Information System (RIS) using standards-based APIs.'
   },
   { bold: 'ABDM & Ayushman Bharat Integration', text: ' — Securely exchange healthcare data with the Ayushman Bharat Digital Mission (ABDM), reducing manual uploads and supporting national digital health initiatives.' },
-  { bold: 'Automatic Consent Record Synchronization', text: "Every digitally signed patient consent is instantly saved to the patient's electronic medical record for quick access and compliance." },
+  { bold: 'Automatic Consent Record Synchronization', text: " — Every digitally signed patient consent is instantly saved to the patient's electronic medical record for quick access and compliance." },
   { bold: 'Fast Hospital Deployment', text: ' — Go live in as little as 14 days with guided implementation, minimal downtime, and dedicated onboarding support.' }
 ]
 

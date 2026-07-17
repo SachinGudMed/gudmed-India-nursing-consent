@@ -79,7 +79,7 @@ export default function ConsentSection() {
               <br />No More Lost Signatures.
             </h2>
             <p className="text-gray-500 text-sm leading-relaxed mb-8">
-              GudMed digitises every consent form in your hospital — surgical, anaesthetic, procedural, research — with e-signature, biometric verification, and complete audit trail.
+              GudMed digitises every consent form in your hospital — surgical, anaesthetic, procedural, research — with e-signature, biometric verification, and complete audit trail, 60+ nursing assessment & charts.
             </p>
 
             <div className="flex flex-col gap-4">

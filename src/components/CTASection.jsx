@@ -2,12 +2,12 @@ import { ArrowRight, Mail, Phone } from 'lucide-react'
 import { useState } from 'react'
 import DemoModal from './DemoModal'
 
-const bottomStats = [
-  { value: '3 hrs', label: 'Nursing time saved per ward daily' },
-  { value: 'Zero', label: 'Lost or misplaced consent forms' },
-  { value: '100%', label: 'Audit trail completeness' },
-  { value: '14 days', label: 'To go live in your hospital' },
-]
+// const bottomStats = [
+//   { value: '3 hrs', label: 'Nursing time saved per ward daily' },
+//   { value: 'Zero', label: 'Lost or misplaced consent forms' },
+//   { value: '100%', label: 'Audit trail completeness' },
+//   { value: '14 days', label: 'To go live in your hospital' },
+// ]
 
 export default function CTASection() {
   const [isModalOpen, setIsModalOpen] = useState(false)
@@ -17,7 +17,7 @@ export default function CTASection() {
       <DemoModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
 
       {/* Stats row */}
-      <section className="bg-[#2E4168] py-10">
+      {/* <section className="bg-[#2E4168] py-10">
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 divide-x divide-white/10">
           {bottomStats.map((s) => (
             <div key={s.value} className="px-6 first:pl-0 last:pr-0 text-center">
@@ -26,10 +26,10 @@ export default function CTASection() {
             </div>
           ))}
         </div>
-      </section>
+      </section> */}
 
       {/* CTA */}
-      <section className="py-20">
+      <section className="py-20 bg-gray-100">
         <div className="max-w-3xl mx-auto px-6 text-center">
           <h2 className="text-3xl md:text-4xl font-semibold text-[#2E4168] leading-tight mb-4">
             See How AI Nursing Documentation Works in Your Hospital.
